@@ -1,5 +1,5 @@
 # password-generator
 
-# this is a web app that will allow you to make a random password for anything you need
+# This is a web app that will allow you to make a random password for various log in accounts.  
 
-# going to work on responsiveness later
+# Currently not a responsive web app. App will break if changing screen sizes. Going to work on responsiveness in future.
