@@ -2,34 +2,48 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 "/"];
 
 
-document.querySelector('button').addEventListener('click',makePasswords)
+document.querySelector('button').addEventListener('click',getPasswords)
 
 let password1 = document.querySelector('#password1')
 let password2 = document.querySelector('#password2')
+let input = document.querySelector('#input-length')
+
+
+function randomChar() {
+
+    let random = Math.floor(Math.random() * characters.length)
+    return characters[random]
+}
 
 
 
 function makePasswords() {
 
-    //characters.length === 91. Putting the random characters into a variable for easier use
-    
+    let randomPassword = ''
+   
+    for(let i = 0; i < input.value; i++){
 
-    let passwordOne = ''
-    let passwordTwo = ''
-
-    for(let i = 0; i < 15; i++){
-
-
-        passwordOne += characters[Math.floor(Math.random() * 91)]
-        passwordTwo += characters[Math.floor(Math.random() * 91)]
-
+        randomPassword += randomChar()
     }
+
+    return randomPassword
+
+}
+
+
+function getPasswords() {
+
+    if(input.value === '' || input.value <= 0){
+        alert("Value must be at least 1")
+    }
+
+    const passwordOne = makePasswords()
+    const passwordTwo = makePasswords()
 
     password1.textContent = passwordOne
     password2.textContent = passwordTwo
-
-
 }
+
 
 
 
