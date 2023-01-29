@@ -33,7 +33,7 @@ function makePasswords() {
 
 function getPasswords() {
 
-    if(input.value === '' || input.value <= 0){
+    if(input.value === '' || input.value < 1){
         alert("Value must be at least 1")
     }
 
