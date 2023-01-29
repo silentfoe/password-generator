@@ -101,14 +101,14 @@ p, .btn {
 
 .btn {
 
-    background: #5DEF92;
+    background: #10B981;
     color: #ffffff;
     filter: brightness(.95);
     border: none;
     border-radius: .25em;
     padding: .5em 1em;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0 0 7px black;
+    /* text-shadow: 0 0 7px black; */
 }
 
 
@@ -132,21 +132,26 @@ p, .btn {
 
     display: flex;
     padding-left: 15em;
+    gap: 10em;
 }
 
 .password-1, .password-2 {
-
-    
-    height: 3em;
-    width: 20em;
+   
+    padding: .25em 1.25em;
+    display: inline-block;
     margin-top: 3em;
+
     border-radius: .5em;
     background: #2F3E53;
-    
+    text-align: center;
+ 
+    color: #5DEF92;
+    font-size: 1.25em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .password-2 {
-    margin-left: 3em;
+    
 }
 
 #first-line {
